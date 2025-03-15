@@ -12,7 +12,7 @@ export const reminders = [
     {
         id: 3,
         date: "March 15, 2024",
-        remindText: "Study Programming"
+        remindText: "Study Programming "
     },
     {
         id: 4,
