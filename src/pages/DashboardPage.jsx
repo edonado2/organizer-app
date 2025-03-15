@@ -12,10 +12,10 @@ export const DashboardPage = () => {
     <div className="min-h-screen bg-slate-50">
       <Navbar />
       
-      <div className="container mx-auto px-4 py-8">
+      <div className=" mx-auto px-4 py-8">
         {/* Header with subtle gradient */}
-        <div className="bg-gradient-to-r from-slate-800 to-slate-700 rounded-lg shadow-md mb-8 p-6 md:p-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-mono text-white">
+        <div className=" rounded-lg shadow-md mb-8 p-6 md:p-8 bg-gradient-to-r from-slate-500 to-slate-200 text-white">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-mono">
             Welcome, Ernesto
           </h1>
           <p className="text-slate-300 mt-2">Here's your personal dashboard</p>

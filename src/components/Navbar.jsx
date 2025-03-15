@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from './Button';
+import logo from '../assets/logo.svg'
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,11 +11,11 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-slate-800 shadow-md">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-1">
         <div className="flex justify-between items-center h-16">
           {/* Logo/Brand */}
           <div className="flex items-center">
-            <span className="text-white font-bold text-xl">Dashboard</span>
+            <span className="text-white font-bold text-xl"><img src={logo} alt="logo" /></span>
           </div>
           
           {/* Desktop Menu */}
