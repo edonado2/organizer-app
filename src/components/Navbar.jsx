@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from './Button'
 
 export const Navbar = () => {
   return (
     <>
-    <div className='  bg-sky-800 text-blue-50 font-bold flex-auto'>
+    <div className='  text-white flex-auto outline font-extrabold bg-amber-300'>
     <ul className='flex justify-end'>
         <li className='p-10'>Home</li>
         <li className='p-10'>Tasks</li>

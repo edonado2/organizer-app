@@ -9,7 +9,8 @@ export const DashboardPage = () => {
   return (
     <>
     <Navbar/>
-    <h1 className='p-5 text-5xl font-bold font-mono m-4'>Welcome, Ernesto </h1>
+    <div>
+       <h1 className='p-5 text-5xl font-bold font-mono m-4'>Welcome, Ernesto </h1>
     <div className='flex columns-3 flex-auto'>
       <div className='flex flex-row'>
       </div>
@@ -24,7 +25,7 @@ export const DashboardPage = () => {
       </div>
     <Lottie animationData={chillAnimation} loop={true} className='h-100'/>
     <div className='flex flex-wrap h-fit p-10 m-5 bg-amber-50 flex-auto rounded-b-4xl'>
-      <h1 className='p-5 text-3xl font-bold'>My Tasks </h1>
+      <h1 className='p-5 text-3xl font-bold text-black'>Pick up from where you left, </h1>
       <Button>Add Task</Button>
       <Card/>
       <Card/>
@@ -38,6 +39,8 @@ export const DashboardPage = () => {
       <Card/>
     </div>
     </div>
+    </div>
+   
     </>
   )
 }
