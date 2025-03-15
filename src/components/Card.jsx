@@ -1,16 +1,25 @@
-import React from 'react'
-import logo from '../assets/react.svg'
-export const Card = () => {
+import React from "react";
+import checkmark from "../assets/check-mark-1.svg";
+
+export const Card = ({ children, title, task, reminder, icon = checkmark }) => {
   return (
-    <>
-    <div className='flex flex-col container m-5 p-12 w-50 h-max  text-gray-700 hover:bg-violet-100 cursor-pointer rounded-2xl bg-gray-50'>
+    <div className="flex flex-col container m-5 p-6 w-64 h-max text-white hover:bg-violet-100 cursor-pointer rounded-2xl bg-[#7B9E89] shadow-md">
+      {/* Icon Section */}
       <div>
-        <img  className="pb-3.5" src={logo} alt="sample"/>
+        <img className="pb-3.5 w-8 h-8" src={icon} alt="icon" />
       </div>
-      <div className='w-fit'>
-        <p className='font-normal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis</p>
+
+      {/* Title */}
+      <p className="font-semibold text-lg">{title}</p>
+
+      {/* Task & Reminder Section */}
+      <div className=" w-fit mt-2">
+        <p className="font-normal">
+          {task} {reminder && <span className="text-2xl">({reminder})</span>}
+          {children}
+        </p>
       </div>
     </div>
-    </>
-  )
-}
+  );
+};
+

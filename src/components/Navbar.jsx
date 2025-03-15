@@ -4,7 +4,7 @@ import { Button } from './Button'
 export const Navbar = () => {
   return (
     <>
-    <div className='  text-white flex-auto outline font-extrabold bg-amber-300'>
+    <div className='  text-white flex-auto outline font-extrabold bg-[#F0A202]'>
     <ul className='flex justify-end'>
         <li className='p-10'>Home</li>
         <li className='p-10'>Tasks</li>
