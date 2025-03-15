@@ -36,7 +36,7 @@ export const DashboardPage = () => {
               
               <div className="p-6">
                 {reminders.length >= 1 ? (
-                  <div className="grid grid-cols-1 gap-4">
+                  <div className="grid grid-cols-2 gap-4">
                     {reminders.map(reminder => (
                       <Card 
                         key={reminder.id} 
